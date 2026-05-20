@@ -1,0 +1,36 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+
+# React
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
+# ML large files
+*.h5
+*.keras
+*.pkl
+*.joblib
+*.tflite
+*.onnx
+
+# Dataset / training outputs
+ml_training/Dataset/
+ml_training/**/checkpoints/
+ml_training/**/logs/
+ml_training/**/outputs/
+backend/predictor/ml_model/**
+
+# System
+.DS_Store
+Thumbs.db
