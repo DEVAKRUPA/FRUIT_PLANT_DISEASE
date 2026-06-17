@@ -7,7 +7,7 @@ SECRET_KEY = "django-insecure-local-development-key"
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "0.0.0.0", "*"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "*"]
 
 
 INSTALLED_APPS = [
@@ -94,5 +94,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
 ]
+# Development only: allow requests from local/network frontend URLs while testing.
 CORS_ALLOW_ALL_ORIGINS = True

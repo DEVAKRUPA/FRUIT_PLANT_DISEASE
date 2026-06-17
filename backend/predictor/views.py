@@ -4,7 +4,12 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from .ml_utils.disease_info import get_disease_info
-from .ml_utils.model_loader import get_class_names, get_model, get_model_path
+from .ml_utils.model_loader import (
+    get_class_names,
+    get_label_source,
+    get_model,
+    get_model_path,
+)
 
 
 CONFIDENCE_THRESHOLD = 60.0
@@ -88,6 +93,8 @@ def predict_disease(request):
         print(
             "Prediction debug: "
             f"model_path={get_model_path()}, "
+            f"label_source={get_label_source()}, "
+            f"number_of_labels={len(class_names)}, "
             f"predicted_index={predicted_index}, "
             f"predicted_label={prediction}, "
             f"confidence={confidence:.2f}%"
