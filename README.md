@@ -5,7 +5,7 @@ A web-based machine learning project for detecting fruit plant leaf diseases usi
 ## Developed By
 
 Devakrupa Parashuramsingh Rajput  
-UUCMS No: P02DR2412602
+UUCMS No: P02DR24126028
 
 ## Project Features
 
